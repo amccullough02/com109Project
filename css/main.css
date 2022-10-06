@@ -1,0 +1,181 @@
+#title {
+	/* Centered + Black Title */
+	color: white;
+	text-align: center;
+	font-size: 36px;
+	letter-spacing: 0.15em; /* Adding spacing between the letters. */
+	text-shadow: 0px 0px 15px black;
+    user-select: none;
+}
+
+#title_div {
+    border-radius: 100px;
+    padding: 0.5em;
+    background-image: linear-gradient(to top left, #b05ce0, #7779f0);
+    width: 90%;
+    box-shadow: 0px 0px 20px rgba(255, 0, 242, 0.512);
+}
+
+#title_parent_div {
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+#list_div {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+#list_parent_div {
+    padding: 0.5em;
+    height: 430px;
+}
+
+#list_devs {
+    list-style: none;
+    padding-right: 56px;
+    width: 30%;
+}
+
+#form_div {
+    padding: 0.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#form_parent_div {
+    padding: 0.5em;
+    margin-top: 0px;
+}
+
+#input_form {
+    padding: 0.5em;
+}
+
+#add_button_div {
+    padding: 0.5em;
+    display: flex;
+}
+
+#input_area {
+    padding: 0.5em;
+}
+
+#submit_button_div {
+    padding: 0.5em;
+    display: flex;
+}
+
+#input_form {
+    background-image: linear-gradient(to left top, #8f5ce0, #77caf0);
+    box-shadow: 0px 0px 20px rgba(0, 140, 255, 0.512);
+    border-radius: 30px;
+    width: 90%;
+}
+
+#FnameLabel {
+    padding-right: 84px;
+    user-select: none;
+}
+
+#LnameLabel {
+    padding-right: 85px;
+    user-select: none;
+}
+
+#ScoreLabel {
+    padding-right: 60px;
+    user-select: none;
+}
+
+#FnameError {
+    display: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#LnameError {
+    display: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#ScoreError {
+    display: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------- */
+
+body {
+    background-image: url("../resources/background_image.png");
+    background-size: cover;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+li {
+    font-size: 20px;
+    padding: 0.5em;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    width: 100%;
+    display: none;
+}
+
+li.winner {
+    margin: 0 0 10px 0;
+}
+
+li.others:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+/* -------------------------------------------------------------- */
+
+.test_borders {
+    border: 1px solid white;
+}
+
+.winner {
+    border-radius: 30px;
+    background-image: linear-gradient(to top left, #ddc497, #cfbb48);
+    user-select: none;
+
+}
+
+.others {
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom right, #b05ce0, #7779f0);
+    user-select: none;
+}
+
+.text_box {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    text-align: center;
+    width: 15%;
+    height: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.312);
+}
+
+.button {
+    width: 15%;
+    height: 25px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.312);
+}
+
+.button:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.512);
+}
+
+.button:active {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.712);
+}

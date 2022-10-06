@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Leaderboard</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" type="image/png" href="resources/favicon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/main.css">
+
+    </head>
+
+    <body>
+
+        <div id="background">
+
+            <div id="title_parent_div">
+
+                <div id="title_div">
+
+                    <h1 id="title">Ulster University Game Jam</h1>
+
+                </div>
+
+            </div>
+
+            <div id="list_parent_div">
+
+                <div id="list_div">
+
+                    <ol id="list_devs">
+                        
+                        <li id="list1" class="winner">Joe Bloggs - Average Score: 9.5/10</li>
+                        <li id="list2" class="others">Joe Schmoe - Average Score: 9.4/10</li>
+                        <li id="list3" class="others">Kate Bekk - Average Score: 9.2/10</li>
+                        <li id="list4" class="others">Tony Stark - Average Score: 9.0/10</li>
+                        <li id="list5" class="others">Toby Fox - Average Score: 8.8/10</li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+            <div id="form_parent_div">
+
+                <div id="form_div">
+
+                    <form id="input_form">
+                        
+                        <div id="add_button_div">
+
+                            <input type="button" value="Add Data to List" class="button" onclick="addToList();">
+
+                        </div>
+
+                        <div id="input_area">
+
+                            <label id="FnameLabel" for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" class="text_box" placeholder="Alex">
+                            <label id="FnameError"></label><br>
+
+                            <label id="LnameLabel" for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname" class="text_box" placeholder="McCullough">
+                            <label id="LnameError"></label><br>
+
+                            <label id="ScoreLabel" for="score">Average Score</label>
+                            <input type="text" id="score" name="score" class="text_box" placeholder="7.8">
+                            <label id="ScoreError"></label>
+
+                        </div>
+
+                        <div id="submit_button_div">
+
+                            <input type="button" value="Submit" class="button" onclick="getData();">
+
+                        </div>
+                    
+                    </form>
+
+                </div>
+
+            </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+
+    </body>
+
+</html>
